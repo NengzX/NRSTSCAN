@@ -1,7 +1,7 @@
 
-# WebScan
+# NRSTSCAN
 
-![WebScan Banner](banner.jpg)
+![NRSTSCAN Banner](banner.jpg)
 
 ![GitHub stars](https://img.shields.io/github/stars/NengzX/NRSTSCAN?style=social)
 ![Version](https://img.shields.io/badge/version-1.0(Beta)-brightgreen)
@@ -25,7 +25,7 @@
 
 ## 🚀 Installation
 
-Follow the steps below to install **WebScan** on Linux or Termux:
+Follow the steps below to install **NRSTSCAN** on Linux or Termux:
 
 ### **Using `Makefile` (Recommended):**
 1. Clone the repository:
@@ -69,7 +69,7 @@ Enter the website URL when prompted, and the tool will process the information a
 ---
 
 ## 🛠 Dependencies
-WebScan requires several Python libraries, which are automatically installed during setup:
+NRSTSCAN requires several Python libraries, which are automatically installed during setup:
 - `requests`
 - `rich`
 - `ssl`
@@ -79,7 +79,7 @@ WebScan requires several Python libraries, which are automatically installed dur
 
 ## 📂 Directory Structure
 ```
-WebScan/
+NRSTSCAN/
 ├── main.py         # Main tool file
 ├── install.sh      # Automatic installation script
 ├── Makefile        # Automates installation and execution

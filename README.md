@@ -30,7 +30,7 @@ Follow the steps below to install **WebScan** on Linux or Termux:
 ### **Using `Makefile` (Recommended):**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/wanzxploit/NRSTSCAN.git
+   git clone https://github.com/NengzX/NRSTSCAN.git
    cd NRSTSCAN
    ```
 2. Run the command:
@@ -41,8 +41,8 @@ Follow the steps below to install **WebScan** on Linux or Termux:
 ### **Without `Makefile`:**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/wanzxploit/NRSTSCAN.git
-   cd WebScan
+   git clone https://github.com/NengzX/NRSTSCAN.git
+   cd NRSTSCAN
    ```
 2. Run the installation script:
    ```bash

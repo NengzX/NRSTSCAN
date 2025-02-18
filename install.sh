@@ -24,7 +24,7 @@ else
 fi
 
 if ! command -v pip3 &> /dev/null; then
-    echo -e "${YELLOW}• pip3 tidak ditemukan, mencoba menginstalnya...${NC}"
+    echo -e "${YELLOW}• pip3 not found, tried installing it...${NC}"
     if $TERMUX; then
         pkg install python-pip -y
     else
@@ -32,7 +32,7 @@ if ! command -v pip3 &> /dev/null; then
     fi
 
     if ! command -v pip3 &> /dev/null; then
-        echo -e "${RED}✖ Gagal menginstal pip3. Memasang pip secara manual...${NC}"
+        echo -e "${RED}✖ Failed to install pip3. Installing pip manually...${NC}"
         curl -sS https://bootstrap.pypa.io/get-pip.py -o get-pip.py
         python3 get-pip.py
         rm get-pip.py
@@ -40,15 +40,15 @@ if ! command -v pip3 &> /dev/null; then
 fi
 
 if ! command -v pip3 &> /dev/null; then
-    echo -e "${RED}✖ pip tidak dapat diinstal. Periksa lingkungan Anda.${NC}"
+    echo -e "${RED}✖ pip cannot be installed. Check your environment.${NC}"
     exit 1
 else
-    echo -e "${GREEN}✔ pip3 berhasil diinstal.${NC}"
+    echo -e "${GREEN}✔ pip3 installed successfully.${NC}"
 fi
 
 echo -e "${YELLOW}• Installing Python libraries...${NC}"
 pip3 install --upgrade pip
 pip3 install rich requests python-whois dnspython pyfiglet
 
-echo -e "${GREEN}✔ Semua dependensi berhasil diinstal!${NC}"
-echo -e "${CYAN}• Anda dapat menjalankan tools dengan perintah:${NC} ${GREEN}python3 main.py atau make run${NC}"
+echo -e "${GREEN}✔ All dependencies installed successfully!${NC}"
+echo -e "${CYAN}• You can run the tools with the command:${NC} ${GREEN}python3 main.py or make run${NC}"
